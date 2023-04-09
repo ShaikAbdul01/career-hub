@@ -1,0 +1,140 @@
+[
+  {
+    "id": 1,
+    "company_logo": "https://example.com/logo1.png",
+    "job_title": "Software Developer",
+    "company_name": "ABC Inc.",
+    "remote_or_onsite": "Onsite",
+    "location": "New York, NY",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$100,000 - $120,000",
+    "job_description": "We are seeking a skilled software developer to join our team and help us build innovative software solutions.",
+    "job_responsibility": [
+      "Develop and maintain software applications",
+      "Collaborate with cross-functional teams to identify and solve complex software problems",
+      "Write clean, efficient, and well-documented code",
+      "Contribute to the design and architecture of software systems"
+    ],
+    "educational_requirements": "Bachelor's degree in Computer Science or related field",
+    "experiences": "5+ years of experience in software development",
+    "contact_information": {
+      "phone": "555-1234",
+      "email": "jobs@abcinc.com"
+    }
+  },
+  {
+    "id": 2,
+    "company_logo": "https://example.com/logo2.png",
+    "job_title": "Marketing Coordinator",
+    "company_name": "XYZ Corp.",
+    "remote_or_onsite": "Remote",
+    "location": "Any location",
+    "fulltime_or_parttime": "Part-time",
+    "salary": "$25 - $30 per hour",
+    "job_description": "We are looking for a talented Marketing Coordinator to help us develop and implement marketing strategies.",
+    "job_responsibility": [
+      "Assist in the development and execution of marketing campaigns",
+      "Conduct market research and analyze customer data",
+      "Create and maintain marketing materials, including brochures, newsletters, and social media posts",
+      "Track and report on marketing campaign performance"
+    ],
+    "educational_requirements": "Bachelor's degree in Marketing or related field",
+    "experiences": "2+ years of experience in marketing",
+    "contact_information": {
+      "phone": "555-5678",
+      "email": "jobs@xyzcorp.com"
+    }
+  },
+  {
+    "id": 3,
+    "company_logo": "https://example.com/logo3.png",
+    "job_title": "Graphic Designer",
+    "company_name": "123 Design Co.",
+    "remote_or_onsite": "Onsite",
+    "location": "San Francisco, CA",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$60,000 - $80,000",
+    "job_description": "We are seeking a talented graphic designer to join our team and help us create beautiful and effective designs.",
+    "job_responsibility": [
+      "Develop and design various marketing and branding materials, such as logos, ads, and websites",
+      "Create visual concepts and presentations",
+      "Ensure brand consistency across all designs",
+      "Collaborate with cross-functional teams to identify and solve design problems"
+    ],
+    "educational_requirements": "Bachelor's degree in Graphic Design or related field",
+    "experiences": "3+ years of experience in graphic design",
+    "contact_information": {
+      "phone": "555-9012",
+      "email": "jobs@123designco.com"
+    }
+  },
+  {
+    "id": 4,
+    "company_logo": "https://example.com/logo1.png",
+    "job_title": "Software Engineer",
+    "company_name": "ABC Company",
+    "remote_or_onsite": "Onsite",
+    "location": "New York, NY",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$120,000 - $150,000",
+    "job_description": "We're looking for a talented software engineer to join our team and help us build innovative products.",
+    "job_responsibility": [
+      "Design, develop, and maintain high-quality software",
+      "Collaborate with other engineers to build and integrate new features",
+      "Write clean, efficient, and well-documented code",
+      "Troubleshoot and debug issues as they arise"
+    ],
+    "educational_requirements": "Bachelor's or Master's degree in Computer Science or related field",
+    "experiences": "3+ years of experience in software engineering",
+    "contact_information": {
+      "phone": "555-1234",
+      "email": "jobs@abccompany.com"
+    }
+  },
+  {
+    "id": 5,
+    "company_logo": "https://example.com/logo2.png",
+    "job_title": "Marketing Manager",
+    "company_name": "XYZ Corporation",
+    "remote_or_onsite": "Remote",
+    "location": "Anywhere",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$80,000 - $100,000",
+    "job_description": "We're seeking an experienced marketing manager to lead our marketing efforts and drive growth.",
+    "job_responsibility": [
+      "Develop and execute marketing strategies",
+      "Manage marketing campaigns across various channels",
+      "Analyze data and provide insights to improve marketing performance",
+      "Collaborate with cross-functional teams to ensure alignment and execution of marketing initiatives"
+    ],
+    "educational_requirements": "Bachelor's or Master's degree in Marketing or related field",
+    "experiences": "5+ years of experience in marketing management",
+    "contact_information": {
+      "phone": "555-5678",
+      "email": "jobs@xyzcorp.com"
+    }
+  },
+  {
+    "id": 6,
+    "company_logo": "https://example.com/logo3.png",
+    "job_title": "Data Analyst",
+    "company_name": "123 Enterprises",
+    "remote_or_onsite": "Onsite",
+    "location": "Los Angeles, CA",
+    "fulltime_or_parttime": "Full-time",
+    "salary": "$90,000 - $110,000",
+    "job_description": "We're looking for a data analyst to help us analyze and interpret complex data sets.",
+    "job_responsibility": [
+      "Collect, analyze, and interpret large data sets",
+      "Develop and maintain data models and visualizations",
+      "Identify trends and patterns in data",
+      "Collaborate with cross-functional teams to provide insights and recommendations"
+    ],
+    "educational_requirements": "Bachelor's or Master's degree in Statistics, Mathematics, or related field",
+    "experiences": "2+ years of experience in data analysis",
+    "contact_information": {
+      "phone": "555-9012",
+      "email": "jobs@123enterprises.com"
+    }
+  }
+]
