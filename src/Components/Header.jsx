@@ -18,12 +18,11 @@ const Header = () => {
             </span>
           </Link>
           <div className="flex md:order-2">
-            <button
-              type="button"
-              className="btn-primary"
-            >
-              Star Applying
-            </button>
+            <Link to="/">
+              <button type="button" className="primaryBtn">
+                Star Applying
+              </button>
+            </Link>
             <button
               data-collapse-toggle="navbar-sticky"
               type="button"
@@ -31,24 +30,24 @@ const Header = () => {
               aria-controls="navbar-sticky"
               aria-expanded="false"
             >
-              <div classNameName="lg:hidden">
+              <div className="lg:hidden">
                 {/* Dropdown Open Button */}
                 <button
                   aria-label="Open Menu"
                   title="Open Menu"
                   onClick={() => setIsMenuOpen(true)}
                 >
-                  <Bars3BottomRightIcon classNameName="w-5 text-gray-600" />
+                  <Bars3BottomRightIcon className="w-5 text-gray-600" />
                 </button>
                 {isMenuOpen && (
-                  <div classNameName="absolute top-0 left-0 w-full z-10">
-                    <div classNameName="p-5 bg-white border rounded shadow-sm">
+                  <div className="absolute top-0 left-0 w-full z-10">
+                    <div className="p-5 bg-white border rounded shadow-sm">
                       {/* Logo & Button section */}
-                      <div classNameName="flex items-center justify-between mb-4">
+                      <div className="flex items-center justify-between mb-4">
                         <div>
-                          <Link to="/" classNameName="inline-flex items-center">
-                            <BoltIcon classNameName="h-6 w-6 text-blue-500" />
-                            <span classNameName="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+                          <Link to="/" className="inline-flex items-center">
+                            <BoltIcon className="h-6 w-6 text-blue-500" />
+                            <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                               nextPage
                             </span>
                           </Link>
@@ -60,22 +59,22 @@ const Header = () => {
                             title="Close Menu"
                             onClick={() => setIsMenuOpen(false)}
                           >
-                            <XMarkIcon classNameName="w-5 text-gray-600" />
+                            <XMarkIcon className="w-5 text-gray-600" />
                           </button>
                         </div>
                       </div>
                       {/* Mobile Nav Items Section */}
                       <nav>
-                        <ul classNameName="space-y-4">
+                        <ul className="space-y-4">
                           <li>
-                            <Link to="/" classNameName="default">
+                            <Link to="/" className="default">
                               Home
                             </Link>
                           </li>
                           <li>
                             <Link
                               to="/statistics"
-                              classNameName="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
                             >
                               Statistics
                             </Link>
@@ -83,7 +82,7 @@ const Header = () => {
                           <li>
                             <Link
                               to="/jobs"
-                              classNameName="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
                             >
                               Applied Jobs
                             </Link>
@@ -91,7 +90,7 @@ const Header = () => {
                           <li>
                             <Link
                               to="/blog"
-                              classNameName="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
+                              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400"
                             >
                               Blog
                             </Link>
