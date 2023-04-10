@@ -6,10 +6,10 @@ import Jobs from "./Jobs";
 const Home = () => {
   return (
     <>
-      <div className="mt-28 md:mt-24 md:flex justify-between items-center my-container bg-gray-200 mb-20 ">
+      <div className="mt-28 md:mt-24 md:flex justify-around items-center my-container bg-gray-200 mb-20 ">
         <div className="sm:pt-16 md:1/2">
-          <h1 className="text-5xl font-bold mb-8 pt-5 md:pt-0">
-            One Step Closer To Yourbr <br />{" "}
+          <h1 className="text-6xl font-bold mb-8 pt-5 md:pt-0">
+            One Step <br /> Closer To Your <br />
             <span className="animate-text bg-gradient-to-r from-[#7E90FE] to-[#9873FF]/100 bg-clip-text text-transparent">
               Dream Job
             </span>

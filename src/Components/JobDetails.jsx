@@ -16,13 +16,12 @@ const JobDetails = () => {
     fetch("/data.json")
       .then((res) => res.json())
       .then((data) => {
-        // console.log(data);
         setDetails(data.find((dt) => dt.id == dynamicId));
       });
   }, [dynamicId]);
-  const handleApplyNow=(id)=>{
-    addToDb(id)
-  }
+  const handleApplyNow = (id) => {
+    addToDb(id);
+  };
   const {
     id,
     contact_information,
@@ -36,7 +35,7 @@ const JobDetails = () => {
     remote_or_onsite,
     salary,
   } = details;
-  console.log(details);
+  // console.log(details);
   return (
     <div className="mt-32 mb-32">
       <h2 className=" text-center md:mb-20 text-4xl font-bold mb-12 bg-blue-100 my-container p-10 rounded shadow">
@@ -45,7 +44,7 @@ const JobDetails = () => {
       <div className=" my-container md:flex  justify-between gap-5">
         <div className="md:w-1/2 md:text-[18px]">
           <p className="mb-4">
-            <span className="font-bold">Job Description :</span>{" "}
+            <span className="font-bold">Job Description :</span>
             <span className="text-gray-600">{job_description}</span>
           </p>
           <p className="mb-4">
@@ -57,7 +56,7 @@ const JobDetails = () => {
             <span className="text-gray-600">{educational_requirements}</span>
           </p>
           <p className="mb-4">
-            <span className="font-bold">Experiences :</span>{" "}
+            <span className="font-bold">Experiences :</span>
             <span className="text-gray-600">{experiences}</span>
           </p>
         </div>
@@ -91,7 +90,12 @@ const JobDetails = () => {
               <span className="font-bold">Address :</span> {location}
             </p>
             <div className="card-actions justify-center mt-5">
-              <button onClick={()=>handleApplyNow(id)} className="primaryBtn w-full">Apply Now</button>
+              <button
+                onClick={() => handleApplyNow(id)}
+                className="primaryBtn w-full"
+              >
+                Apply Now
+              </button>
             </div>
           </div>
         </div>
