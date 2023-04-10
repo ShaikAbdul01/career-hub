@@ -1,25 +1,25 @@
 [
   {
     "id": 1,
-    "icon": "",
+    "icon": "https://cdn-icons-png.flaticon.com/128/1570/1570998.png",
     "title": "Account & Finance",
     "available": "211 Jobs Available"
   },
   {
     "id": 2,
-    "icon": "",
+    "icon": "https://cdn-icons-png.flaticon.com/128/5918/5918545.png",
     "title": "Creative Design",
     "available": "97 Jobs Available"
   },
   {
     "id": 3,
-    "icon": "",
+    "icon": "https://cdn-icons-png.flaticon.com/128/1998/1998087.png",
     "title": "Marketing & Sales",
     "available": "183 Jobs Available"
   },
   {
     "id": 4,
-    "icon": "",
+    "icon": "https://cdn-icons-png.flaticon.com/128/609/609034.png",
     "title": "Engineering Job",
     "available": "335 Jobs Available"
   }

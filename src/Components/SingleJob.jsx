@@ -1,8 +1,8 @@
 import React from "react";
 import { MapPinIcon, CurrencyDollarIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
-const SingleJob = ({ job }) => {
-    // console.log(job);
+const SingleJob = ({ job,handleViewDetails }) => {
+  // console.log(job);
   const {
     company_logo,
     company_name,
@@ -35,12 +35,12 @@ const SingleJob = ({ job }) => {
             </div>
           </div>
           <div className="primaryBtn w-[150px]">
-            <Link to={`/details/${id}`}>
-              <button>View Details</button>
-            </Link>
+            <button onClick={handleViewDetails(id)}>View Details</button>
+            {/* <Link to={`/details/${id}`}>
+              <button></button>
+            </Link> */}
           </div>
         </div>
-       
       </div>
     </>
   );

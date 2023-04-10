@@ -1,12 +1,15 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
 
 const Details = () => {
-    const details=useLoaderData()
-    // console.log(details)
+    // const details=useLoaderData()
+    const cartData=localStorage.getItem('cart')
+    if(cartData){
+        cart=JSON.parse(cartData)
+    }
+    console.log(cartData )
     return (
         <div className='mt-24'>
-           <h1>details</h1>
+           <h1>{cart}</h1>
         </div>
     );
 };

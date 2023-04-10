@@ -1,11 +1,13 @@
+import { key } from "localforage";
 import React, { useEffect, useState } from "react";
+import CatagoryList from "./CatagoryList";
 
 const Catagory = () => {
-  const [catagorys, setCatagorys] = useState([]);
+  const [catagories, setCatagories] = useState([]);
   useEffect(() => {
     fetch("catagory.json")
       .then((res) => res.json())
-      .then((data) => setCatagorys(data));
+      .then((data) => setCatagories(data));
   }, []);
   return (
     <div className="">
@@ -15,10 +17,12 @@ const Catagory = () => {
         Explore thousands of job opportunities with all the information you need. Its your future
         </p>
       </div>
-      <div className="mb-10">
-        {catagorys.map((catagory) => (
-          <p>{catagory.title}</p>
-        ))}
+      <div className="mb-10 my-container grid md:grid-cols-4 gap-4 ">
+        {
+          catagories.map(catagory=><CatagoryList key={catagory.id}
+          catagory={catagory}
+          ></CatagoryList>)
+        }
       </div>
     </div>
   );
