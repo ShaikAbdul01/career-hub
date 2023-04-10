@@ -1,5 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import {
+  BeakerIcon,
+  BriefcaseIcon,
+  CurrencyDollarIcon,
+  EnvelopeOpenIcon,
+  MapPinIcon,
+  PhoneIcon,
+} from "@heroicons/react/24/solid";
 const JobDetails = () => {
   const dynamic = useParams();
   // console.log(dynamic)
@@ -29,45 +37,64 @@ const JobDetails = () => {
   } = details;
   console.log(details);
   return (
-    <div className="mt-32">
-      <h2 className="text-3xl font-bold text-center mb-8 md:mb-20">Job Details</h2>
-    <div className=" my-container md:flex  justify-between gap-5">
-      <div className="md:w-1/2">
-        <p className="mb-4">
-          <span className="font-bold">Job Description :</span> {job_description}
-        </p>
-        <p className="mb-4">
-          <span className="font-bold">Job Responsibility :</span>
-          {job_responsibility}
-        </p>
-        <p className="mb-4">
-          <span className="font-bold">Educational Requirements :</span>
-          {educational_requirements}
-        </p>
-        <p className="mb-4">
-          <span className="font-bold">Experiences :</span> {experiences}
-        </p>
-      </div>
+    <div className="mt-32 mb-32">
+      <h2 className=" text-center md:mb-20 text-4xl font-bold mb-12 bg-blue-100 my-container p-10 rounded shadow">
+        Job Details
+      </h2>
+      <div className=" my-container md:flex  justify-between gap-5">
+        <div className="md:w-1/2 md:text-[17px]">
+          <p className="mb-4">
+            <span className="font-bold">Job Description :</span>{" "}
+            <span className="text-gray-600">{job_description}</span>
+          </p>
+          <p className="mb-4">
+            <span className="font-bold">Job Responsibility :</span>
+            <span className="text-gray-600">{job_responsibility}</span>
+          </p>
+          <p className="mb-4">
+            <span className="font-bold">Educational Requirements :</span>
+            <span className="text-gray-600">{educational_requirements}</span>
+          </p>
+          <p className="mb-4">
+            <span className="font-bold">Experiences :</span>{" "}
+            <span className="text-gray-600">{experiences}</span>
+          </p>
+        </div>
 
-      <div className="card md:w-1/2 bg-base-100 shadow-xl">
-        <div className="card-body">
-          <h2 className="card-title">Job Details</h2>
-          <hr />
-          <p>Salary : {salary}</p>
-          <p>Job Title : {job_title}</p>
-          <h2 className="card-title">Contact Information</h2>
-          <hr />
-          <p>Phone : {contact_information
-?.phone}</p>
-          <p>Email : {contact_information
-?.email}</p>
-          <p>Address : {location}</p>
-          <div className="card-actions justify-center">
-            <button className="primaryBtn">Apply Now</button>
+        <div className="card md:w-1/2 bg-gray-100 shadow-xl">
+          <div className="card-body ">
+            <h2 className="card-title">Job Details</h2>
+            <hr />
+            <p className="flex items-center">
+              <CurrencyDollarIcon className="h-6 w-6 mr-2 text-blue-400" />
+              <span className="font-bold">Salary :</span> {salary}
+            </p>
+            <p className="flex items-center">
+              <BriefcaseIcon className="h-6 w-6 mr-2 text-blue-400" />
+              <span className="font-bold">Job Title :</span> {job_title}
+            </p>
+            <h2 className="card-title mt-6">Contact Information</h2>
+            <hr />
+            <p className="flex items-center">
+              <PhoneIcon className="h-6 w-6 mr-2 text-blue-400" />
+              <span className="font-bold">Phone :</span>{" "}
+              {contact_information?.phone}
+            </p>
+            <p className="flex items-center">
+              <EnvelopeOpenIcon className="h-6 w-6 mr-2 text-blue-400" />
+              <span className="font-bold">Email :</span>{" "}
+              {contact_information?.email}
+            </p>
+            <p className="flex items-center">
+              <MapPinIcon className="h-6 w-6 mr-2 text-blue-400" />
+              <span className="font-bold">Address :</span> {location}
+            </p>
+            <div className="card-actions justify-center">
+              <button className="primaryBtn">Apply Now</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 };
