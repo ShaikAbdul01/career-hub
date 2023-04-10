@@ -69,8 +69,10 @@ const TriangleBar = (props) => {
 export default function Statistics() {
 
   return (
+   <div className="mt-28 text-center mx-auto mb-10">
+<h1 className="text-4xl font-bold mb-12 bg-gray-200 my-container p-10 rounded shadow">Statistics</h1>
     <BarChart
-      className="mt-48 mx-auto mb-10"
+      className="mx-auto"
       width={500}
       height={300}
       data={data}
@@ -81,6 +83,7 @@ export default function Statistics() {
         bottom: 5,
       }}
     >
+      
       <CartesianGrid strokeDasharray="3 3" />
       <XAxis dataKey="name" />
       <YAxis />
@@ -95,6 +98,7 @@ export default function Statistics() {
         ))}
       </Bar>
     </BarChart>
+   </div>
   );
 }
 

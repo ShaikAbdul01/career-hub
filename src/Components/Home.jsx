@@ -29,6 +29,8 @@ const Home = () => {
       </div>
        <Catagory></Catagory>
       <Jobs></Jobs>
+     
+
     </>
   );
 };

@@ -35,10 +35,12 @@ const SingleJob = ({ job }) => {
             </div>
           </div>
           <div className="primaryBtn w-[150px]">
-            
-              <Link to={`details/:${id}`}>View Details</Link>
+            <Link to={`/details/${id}`}>
+              <button>View Details</button>
+            </Link>
           </div>
         </div>
+        
       </div>
     </>
   );
