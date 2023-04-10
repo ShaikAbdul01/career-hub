@@ -1,15 +1,10 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
 import SingleJob from "./SingleJob";
-import { addToDb } from "../../public/fakedb";
 
 const Jobs = () => {
   const jobs = useLoaderData();
   // console.log(jobs);
-
-  const handleViewDetails = (id) => {
-    addToDb(id);
-  };
   return (
     <div>
       <div className="text-center mb-10">
@@ -21,7 +16,7 @@ const Jobs = () => {
       </div>
       <div className="my-container grid md:grid-cols-2 gap-5">
         {jobs?.map((job) => (
-          <SingleJob key={job.id} job={job} handleViewDetails={handleViewDetails}></SingleJob>
+          <SingleJob key={job.id} job={job}></SingleJob>
         ))}
       </div>
     </div>

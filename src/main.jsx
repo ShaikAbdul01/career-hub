@@ -5,18 +5,17 @@ import "./index.css";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Components/Home";
-import Catagory from "./Components/Catagory";
-import Details from "./Components/Details";
 import Statistics from "./Components/Statistics";
 import Jobs from "./Components/Jobs";
 import Blog from "./Components/Blog";
 import ErrorPage from "./Components/ErrorPage";
+import JobDetails from "./Components/JobDetails";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
-    errorElement:<ErrorPage></ErrorPage>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -24,9 +23,9 @@ const router = createBrowserRouter([
         loader: () => fetch(`data.json`),
       },
       {
-        path: `details/:id`,
-        element: <Details></Details>,
-        loader: ({ params }) => fetch(`data.json/${params.id}`),
+        path: "details/:detailsId",
+        element: <JobDetails></JobDetails>,
+        loader: ({ params }) => fetch(`data.json/${params.detailsId}`),
       },
       {
         path: "statistics",
