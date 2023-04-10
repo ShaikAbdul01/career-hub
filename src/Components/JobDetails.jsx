@@ -1,18 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import {
-  BeakerIcon,
   BriefcaseIcon,
   CurrencyDollarIcon,
   EnvelopeOpenIcon,
   MapPinIcon,
   PhoneIcon,
 } from "@heroicons/react/24/solid";
+import { addToDb } from "../../public/fakedb";
 const JobDetails = () => {
   const dynamic = useParams();
-  // console.log(dynamic)
   const dynamicId = dynamic.detailsId;
-  // console.log(dynamic,dynamicId)
   const [details, setDetails] = useState({});
   useEffect(() => {
     fetch("/data.json")
@@ -22,8 +20,11 @@ const JobDetails = () => {
         setDetails(data.find((dt) => dt.id == dynamicId));
       });
   }, [dynamicId]);
+  const handleApplyNow=(id)=>{
+    addToDb(id)
+  }
   const {
-    company_name,
+    id,
     contact_information,
     educational_requirements,
     experiences,
@@ -42,7 +43,7 @@ const JobDetails = () => {
         Job Details
       </h2>
       <div className=" my-container md:flex  justify-between gap-5">
-        <div className="md:w-1/2 md:text-[17px]">
+        <div className="md:w-1/2 md:text-[18px]">
           <p className="mb-4">
             <span className="font-bold">Job Description :</span>{" "}
             <span className="text-gray-600">{job_description}</span>
@@ -89,8 +90,8 @@ const JobDetails = () => {
               <MapPinIcon className="h-6 w-6 mr-2 text-blue-400" />
               <span className="font-bold">Address :</span> {location}
             </p>
-            <div className="card-actions justify-center">
-              <button className="primaryBtn">Apply Now</button>
+            <div className="card-actions justify-center mt-5">
+              <button onClick={()=>handleApplyNow(id)} className="primaryBtn w-full">Apply Now</button>
             </div>
           </div>
         </div>
