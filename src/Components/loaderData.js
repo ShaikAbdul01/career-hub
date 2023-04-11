@@ -3,6 +3,7 @@ const loaderData = async () => {
   const loadedData = await fetch("data.json");
   const products = await loadedData.json();
   const storedCart = getCart();
+  // console.log(storedCart);
   const savedCart = [];
   for (const id in storedCart) {
     const addedProduct = products.find((pd) => pd.id === id);

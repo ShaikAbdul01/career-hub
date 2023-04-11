@@ -1,21 +1,28 @@
 import React, { useState } from "react";
 import { getCart } from "../../public/fakedb";
 import { useLoaderData, useParams } from "react-router-dom";
+import Card from "./Card";
 
 const AppliedJobs = () => {
-  const savedCart = useLoaderData();
-  const [cart, setCart] = useState(savedCart);
-
-  /* let cart = [];
-  const saveCart = getCart("cart");
-  for (const id in saveCart) {
-    const foundData = details.find((data) => data.id === id);
-    if (foundData) {
-      cart.push(foundData);
+  const cart = useLoaderData();
+  console.log(cart);
+  const storedCart = getCart();
+  const savedCart = [];
+  for (const id in storedCart) {
+    const addedProduct = cart.find((pd) => pd.id == id);
+    if (addedProduct) {
+      const quantity = storedCart[id];
+      addedProduct.quantity = quantity;
+      savedCart.push(addedProduct);
     }
-    // console.log(details.length);
-  } */
-  return <div className="mt-32">cart{savedCart.company_name}</div>;
+  }
+  console.log(savedCart);
+
+  return <div className="mt-32">
+  {
+    savedCart.map(data=><Card key={data.id} card={data}></Card>)
+  }
+  </div>;
 };
 
 export default AppliedJobs;
