@@ -6,12 +6,10 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Components/Home";
 import Statistics from "./Components/Statistics";
-import Jobs from "./Components/Jobs";
 import Blog from "./Components/Blog";
 import ErrorPage from "./Components/ErrorPage";
 import JobDetails from "./Components/JobDetails";
 import AppliedJobs from "./Components/AppliedJobs";
-import loaderData from "./Components/LoaderData";
 
 const router = createBrowserRouter([
   {

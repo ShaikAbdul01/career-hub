@@ -24,7 +24,7 @@ const Home = () => {
           </Link>
         </div>
         <div className="md:w-[816px] h-auto ">
-          <img src="../../public/hardy.png" className="" alt="" />
+          <img src="../hardy.png" className="" alt="" />
         </div>
       </div>
       <Catagory></Catagory>
