@@ -23,7 +23,7 @@ const SingleJob = ({ job }) => {
             <button className="btn btn-outline btn-accent w-[120px]">
               {fulltime_or_parttime}
             </button>
-            <div className="flex justify-around items-center text-gray-600">
+            <div className="md:flex justify-around items-center text-gray-600">
               <p className="flex  items-center space-x-2">
                 <MapPinIcon className="h-5 w-5 mr-2" />
                 {location}

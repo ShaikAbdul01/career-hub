@@ -69,7 +69,7 @@ const TriangleBar = (props) => {
 export default function Statistics() {
 
   return (
-   <div className="mt-28 text-center mx-auto mb-10">
+   <div className="mt-28 text-center mx-auto md:mx-[500px] mb-10">
 <h1 className="text-4xl font-bold mb-12 bg-blue-100 my-container p-10 rounded shadow">Statistics</h1>
     <BarChart
       className="mx-auto"

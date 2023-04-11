@@ -20,10 +20,19 @@ const Jobs = () => {
           <SingleJob key={job.id} job={job}></SingleJob>
         ))}
       </div>
-      <div className="mt-24 mb-24 w-[150px] mx-auto font-medium transition duration-200 shadow-md px-4 py-2  md:py-3 text-lg border-transparent text-white bg-gradient-to-r from-[#7E90FE]/100 to-[#9873FF]/100 rounded-xl text-center">
-        <button onClick={() => setSeeAll(!seeAll)?"":"hidden"} className=" ">
-          See All
-        </button>
+      <div className="mt-24 mb-24 w-[150px] mx-auto  ">
+        {seeAll ? (
+          <button onClick={() => setSeeAll(!seeAll)} className="hidden">
+            See All
+          </button>
+        ) : (
+          <button
+            onClick={() => setSeeAll(!seeAll)}
+            className="font-medium transition duration-200 shadow-md px-4 py-2  md:py-3 text-lg border-transparent text-white bg-gradient-to-r from-[#7E90FE]/100 to-[#9873FF]/100 rounded-xl text-center"
+          >
+            See All
+          </button>
+        )}
       </div>
     </div>
   );

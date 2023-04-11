@@ -5,18 +5,18 @@ import Card from "./Card";
 
 const AppliedJobs = () => {
   const cart = useLoaderData();
-  console.log(cart);
+  // console.log(cart);
   const storedCart = getCart();
   const savedCart = [];
   for (const id in storedCart) {
-    const addedProduct = cart.find((pd) => pd.id == id);
+    const addedProduct = cart?.find((pd) => pd.id == id);
     if (addedProduct) {
       const quantity = storedCart[id];
       addedProduct.quantity = quantity;
       savedCart.push(addedProduct);
     }
   }
-  console.log(savedCart);
+  // console.log(savedCart);
 
   return <div className="mt-32">
   {
